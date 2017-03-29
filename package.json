@@ -1,0 +1,27 @@
+{
+  "name": "projet_chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "slackbots": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jow31/projet_chatbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jow31/projet_chatbox/issues"
+  },
+  "homepage": "https://github.com/jow31/projet_chatbox#readme",
+  "description": ""
+}
