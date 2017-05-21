@@ -4,7 +4,7 @@
   "main": "bot2.js",
   "scripts": {
     "test": "mocha",
-    "start": "node bot.js"
+    "start": "node bot2.js"
   },
   "author": "",
   "license": "ISC",
