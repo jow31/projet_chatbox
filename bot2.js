@@ -1,8 +1,14 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client(); //client est le bot
+//const commando = require('discord.js-commando');
+//const bot = new commando.Client(); //come discord client avec plusiers des features
 
-// const commando = require('discord.js-commando')
-//const bot = commando.Client();
+
+// Every command needs to be in a group
+//bot.registry.registerGroup('requetes', 'Requetes');
+//bot.registry.registerDefaults(); //register defaults commands as help
+//bot.registry.registerCommandsIn(__dirname + "/commands");
+
 
 bot.login(process.env.DISCORD_TOKEN); //log into server
 
@@ -17,6 +23,8 @@ app.get('/', function(req, res){
 bot.on('ready', () => {
 	console.log('I am ready!');
 });
+
+/*
 bot.on('message', message => {   //A chaque fois qu'un message est envoye; on va excecuter => {}
 	if (message.content === 'ping') { //parecido a == pero compara el tipo tambien
 		//message.reply('pong');
@@ -28,5 +36,33 @@ bot.on('message', message => {   //A chaque fois qu'un message est envoye; on va
 bot.on('presenceUpdate', function(oldMember, newMember) {
 	console.log(oldMember.presence, '=>', newMember.presence);
 });
+*/
+
+// BLAGUE
+bot.on('message', message => {   //A chaque fois qu'un message est envoye; on va excecuter => {}
+	
+	var input = message.content.toUpperCase();
+	let prefix = '!';
+
+	if (message.content === (prefix + 'BLAGUE') { //
+		
+	}
+	
+	if ((message.content === (prefix+'MÉTÉO') || (message.content === (prefix+'METEO')){ //
+		
+	}
+	
+	if (message.content === (prefix+'IMAGE') { //
+		
+	}
+	
+	if (message.content === (prefix+'ISS') { //
+		
+	}
+	console.log(message);
+});
+
+
+
 
 app.listen(process.env.PORT || 5000);
